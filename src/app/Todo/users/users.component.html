@@ -1,0 +1,9 @@
+<div *ngFor=" let t of listUsers; let i=index">
+  {{t.id}}
+  {{t.name}}
+  {{t.username}}
+  {{t.email}}
+</div>
+<input type="text" value="recherche" name="search" ngModel #search="ngModel">
+<input type="submit" value="Bilan" (click)="getNumberOf(listUsers,'username',search.value)">
+

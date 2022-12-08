@@ -1,0 +1,8 @@
+<div *ngFor=" let t of listProdcut; let i=index">
+  {{t.id}}
+  {{t.title}}
+  {{t.quantity}}
+  {{t.price}}
+</div>
+
+<input type="submit" value="Bilan" (click)="getNumberOf(listProdcut,'quantity',0)">

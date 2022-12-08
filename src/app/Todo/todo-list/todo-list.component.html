@@ -1,0 +1,8 @@
+<div *ngFor=" let t of todolist; let i=index">
+  {{t.id}}
+  {{t.title}}
+  {{t.completed}}
+  {{t.userId}}
+</div>
+
+<input type="submit" value="Bilan" (click)="getNumberOf(todolist,'completed',true)">
